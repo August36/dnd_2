@@ -1,0 +1,76 @@
+---
+import "../styles/style.css";
+---
+<article>
+    <div class="pair">
+        <div class="hp-bar">
+            <!-- hp -->
+        </div>
+        <div class="hp-mana-btn-container">
+            <button>
+                Take dmg
+            </button>
+            <button>
+                Heal
+            </button>
+        </div>
+    </div>
+    <div>
+        <h2>Player 1</h2>
+    </div>
+    <div class="pair">
+        <div class="mana-bar">
+            <!-- mana -->
+        </div>
+        <div class="hp-mana-btn-container">
+            <button>
+                use mana
+            </button>
+            <button>
+                restore mana
+            </button>
+            </div>
+        </div>
+    </div>
+</article>
+
+<style>
+    article{
+        margin: 50px;
+        padding: 20px;
+        display: flex;
+        justify-content: space-around;
+        border: solid black;
+    }
+
+    .hp-bar{
+        border: solid black;
+        width: 30px;
+        height: 100px;
+        background-color: green;
+    }
+
+    .mana-bar{
+        border: solid black;
+        width: 30px;
+        height: 100px;
+        background-color: blue;
+    }
+
+    .hp-mana-btn-container{
+        margin: 0 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    button{
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    .pair{
+        display: flex;
+        flex-direction: row;
+    }
+
+</style>
