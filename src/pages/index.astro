@@ -2,6 +2,10 @@
 import Nav from "../components/Nav.astro"
 import Hpmana from "../components/Hpmana.astro"
 import Combatstats from "../components/Combatstats.astro"
+import Spells from "../components/Spells.astro";
+import Weapons from "../components/Weapons.astro";
+import Armor from "../components/Armor.astro"
+import Inventory from "../components/Inventory.astro"
 ---
 
 <html lang="en">
@@ -17,10 +21,15 @@ import Combatstats from "../components/Combatstats.astro"
 			<Nav />
 		</header>
 		<main>
+			<h2>Player 1</h2>
 			<form action="">
 			<Hpmana />
-			<h2>Combat Stats</h2>
 			<Combatstats />
+			<Spells />
+			<Weapons />
+			<Armor />
+			<Inventory />
+			<input type="submit" value="Submit">
 		</form>
 		</main>
 		<footer>
