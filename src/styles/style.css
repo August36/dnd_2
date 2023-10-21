@@ -29,3 +29,26 @@ label > input {
     flex: 1; /* Allow input fields to take up remaining space */
     margin-left: 10px;
   }
+
+  /* Hp/Mana */
+
+.hp-mana-container{
+    border: solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 20vh;
+    width: 60vh;
+}
+
+.hp-mana-container-flex{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#decreaseBtn, #increaseBtn, #decreaseManaBtn, #increaseManaBtn{
+    padding: 10px;
+    margin: 5px;
+}

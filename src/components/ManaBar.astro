@@ -1,0 +1,67 @@
+<style>
+    .mana-bar-container {
+        width: 25px;
+        height: 100px;
+        border: 2px solid black;
+        background-color: grey;
+        position: relative;
+    }
+
+    .mana-bar {
+        width: 100%;
+        height: 100%;
+        background-color: blue; /* Change the background color to blue */
+        position: absolute;
+        bottom: 0;
+    }
+
+    .mana-bar-flexbox{
+        display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 15vh;
+            margin: 0;
+    }
+
+    .mana-button-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+</style>
+</head>
+<body>
+<div class="mana-bar-flexbox">
+    <div class="mana-bar-container">
+        <div class="mana-bar" id="manaBar"></div>
+    </div>
+    <div class="mana-button-container">
+        <button id="decreaseManaBtn">Decrease Mana</button>
+        <button id="increaseManaBtn">Increase Mana</button>
+    </div>
+</div>
+
+<script>
+    const manaBar = document.getElementById("manaBar");
+    const decreaseManaBtn = document.getElementById("decreaseManaBtn");
+    const increaseManaBtn = document.getElementById("increaseManaBtn");
+
+    let currentMana = 100; // Initial Mana (in percentage)
+
+    // Function to update the Mana bar
+    const updateManaBar = () => {
+        currentMana = Math.max(0, currentMana - 1);
+        manaBar.style.height = currentMana + "%";
+    };
+
+    // Decrease Mana by 1%
+    decreaseManaBtn.addEventListener("click", () => {
+        updateManaBar();
+    });
+
+    // Increase Mana by 1%, but not beyond 100%
+    increaseManaBtn.addEventListener("click", () => {
+        currentMana = Math.min(100, currentMana + 1);
+        manaBar.style.height = currentMana + "%";
+    });
+</script>

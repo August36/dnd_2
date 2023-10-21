@@ -1,6 +1,7 @@
 ---
 import Nav from "../components/Nav.astro";
-import Hpmana from "../components/Hpmana.astro";
+import HpBar from "../components/HpBar.astro";
+import ManaBar from "../components/ManaBar.astro";
 import Combatstats from "../components/Combatstats.astro";
 import Spells from "../components/Spells.astro";
 import Weapons from "../components/Weapons.astro";
@@ -25,7 +26,12 @@ import Dice from "../components/Dice.astro"
 			<h2>Player 1</h2>
 			<Dice rollDice="Roll the Dice"/>
 			<!-- <form action="/submit" method="post"> -->
-			<Hpmana takeDmg="Take Damage" heal="Heal" useMana="Use Mana" gainMana="Restore Mana"/>
+			<div class="hp-mana-container-flex">
+				<div class="hp-mana-container">
+					<HpBar />
+					<ManaBar />
+				</div>
+			</div>
 			<Combatstats header="Combat Stats" combatLvl="Combat Level:" strLvl="Strength Level:" atkLvl="Attack Level:" defLvl="Defense Level" rngLvl="Ranged Level:" mgcLvl="Magic Level:"/>
 			<Spells header="Spells" spell1="Spell 1:" spell2="Spell 2:" spell3="Spell 3:" spell4="Spell 4:" spell5="Spell 5:" spell6="Spell 6:"/>
 			<Weapons header="Weapons" wpn1="Weapon 1:" wpn2="Weapon 2:" wpn3="Weapon 3:" wpn4="Weapon 4:"/>
