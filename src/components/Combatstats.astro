@@ -1,25 +1,26 @@
 ---
 import "../styles/style.css";
+const {header, combatLvl, strLvl, atkLvl, defLvl, rngLvl, mgcLvl} = Astro.props;
 ---
-<h2>Combat Stats</h2>
+<h2>{header}</h2>
 
 <article class="input-article">
-    <label for="combatLvl">Combat Level:
+    <label for="combatLvl">{combatLvl}
         <input type="text" id="combatLvl">
     </label>
-    <label for="strLvl">Strength level:
+    <label for="strLvl">{strLvl}
         <input type="text" id="strLvl">
     </label>
-    <label for="atkLvl">Attack Level:
+    <label for="atkLvl">{atkLvl}
         <input type="text" id="atkLvl">
     </label>
-    <label for="defLvl">Defense level:
+    <label for="defLvl">{defLvl}
         <input type="text" id="defLvl">
     </label>
-    <label for="rngLvl">Ranged Level:
+    <label for="rngLvl">{rngLvl}
         <input type="text" id="rngLvl">
     </label>
-    <label for="mgcLvl">Magic Level:
+    <label for="mgcLvl">{mgcLvl}
         <input type="text" id="mgcLvl">
     </label>
 </article>

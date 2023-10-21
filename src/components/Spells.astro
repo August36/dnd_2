@@ -1,25 +1,26 @@
 ---
 import "../styles/style.css";
+const {header, spell1, spell2, spell3, spell4, spell5, spell6} = Astro.props;
 ---
 
-<h2>Spells</h2>
+<h2>{header}</h2>
 <article class="input-article">
-	<label for="spell1">Spell 1:
+	<label for="spell1">{spell1}
 		<input type="text" id="spell1">
 	</label>
-	<label for="spell2">Spell 2:
+	<label for="spell2">{spell2}
 		<input type="text" id="spell2">
 	</label>
-	<label for="spell3">Spell 3:
+	<label for="spell3">{spell3}
 		<input type="text" id="spell3">
 	</label>
-	<label for="spell4">Spell 4:
+	<label for="spell4">{spell4}
 		<input type="text" id="spell4">
 	</label>
-	<label for="spell5">Spell 5:
+	<label for="spell5">{spell5}
 		<input type="text" id="spell5">
 	</label>
-	<label for="spell6">Spell 6:
+	<label for="spell6">{spell6}
 		<input type="text" id="spell6">
 	</label>
 </article>

@@ -1,8 +1,9 @@
 ---
 import "../styles/style.css";
+const {header, wpn1, wpn2, wpn3, wpn4} = Astro.props;
 ---
 
-<h2>Weapons</h2>
+<h2>{header}</h2>
 <article class="input-article">
 	<label for="weapon1">Weapon 1:
 		<input type="text" id="weapon1">

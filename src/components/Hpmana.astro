@@ -1,17 +1,17 @@
 ---
 import "../styles/style.css";
+const {takeDmg, heal, useMana, gainMana} = Astro.props;
 ---
 <article>
     <div class="pair">
         <div class="hp-bar">
-            <!-- hp -->
         </div>
         <div class="hp-mana-btn-container">
             <button>
-                Take dmg
+                {takeDmg}
             </button>
             <button>
-                Heal
+                {heal}
             </button>
         </div>
     </div>
@@ -19,14 +19,13 @@ import "../styles/style.css";
     </div>
     <div class="pair">
         <div class="mana-bar">
-            <!-- mana -->
         </div>
         <div class="hp-mana-btn-container">
             <button>
-                Use mana
+                {useMana}
             </button>
             <button>
-                Restore mana
+                {gainMana}
             </button>
             </div>
         </div>

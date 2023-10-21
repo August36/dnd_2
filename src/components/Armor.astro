@@ -1,19 +1,20 @@
 ---
 import "../styles/style.css";
+const {header, head, torso, legs, feet} = Astro.props;
 ---
 
 <h2>Armor</h2>
 <article class="input-article">
-	<label for="head">Head:
+	<label for="head">{head}
 		<input type="text" id="head">
 	</label>
-	<label for="torso">Torso:
+	<label for="torso">{torso}
 		<input type="text" id="torso">
 	</label>
-    <label for="legs">Legs:
+    <label for="legs">{legs}
 		<input type="text" id="legs">
 	</label>
-    <label for="feet">Feet:
+    <label for="feet">{feet}
 		<input type="text" id="feet">
 	</label>
 </article>
