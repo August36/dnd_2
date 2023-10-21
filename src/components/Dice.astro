@@ -1,20 +1,23 @@
 ---
 import "../styles/style.css";
+const { rollDice } = Astro.props;
 ---
 <div class="dice-container">
-    <div class="dice">
-    </div>
-    <button>Roll the dice</button>
+    <label class="xLabel" id="xLabel"></label>
+    <button type="button" id="rollButton">{rollDice}</button>
 </div>
 
 <style>
-    .dice {
-        border: solid black;
+    .xLabel {
+        border: solid black; /* Add the border to the .xLabel class */
         width: 100px;
         height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
-    .dice-container{
+    .dice-container {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -22,7 +25,16 @@ import "../styles/style.css";
         height: 15vh;
     }
 
-    button{
+    button {
         margin-top: 10px;
     }
 </style>
+
+<script>
+    let x;
+
+    document.getElementById("rollButton").onclick = function () {
+        x = Math.floor(Math.random() * 20) + 1;
+        document.getElementById("xLabel").innerHTML = x;
+    }
+</script>
