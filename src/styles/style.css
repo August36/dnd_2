@@ -1,54 +1,66 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-header{
-    background-color: rgb(46, 3, 3);
+header {
+  background-color: rgb(46, 3, 3);
 }
 
-h2{
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
+h2 {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
-.input-article{
-    display: flex;
-    flex-direction: column;
-    margin-left: 10px;
+.input-article {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
 }
 
-label{
-    display: flex;
-    justify-content: space-around;
-    margin-top: 10px;
+label {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
 }
 label > input {
-    flex: 1; /* Allow input fields to take up remaining space */
-    margin-left: 10px;
-  }
-
-  /* Hp/Mana */
-
-.hp-mana-container{
-    border: solid black;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    height: 20vh;
-    width: 60vh;
+  flex: 1; /* Allow input fields to take up remaining space */
+  margin-left: 10px;
 }
 
-.hp-mana-container-flex{
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
+/* Hp/Mana */
+
+.hp-mana-container {
+  border: solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 20vh;
+  width: 60vh;
 }
 
-#decreaseBtn, #increaseBtn, #decreaseManaBtn, #increaseManaBtn{
-    padding: 10px;
-    margin: 5px;
+.hp-mana-container-flex {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#decreaseBtn,
+#increaseBtn,
+#decreaseManaBtn,
+#increaseManaBtn {
+  padding: 10px;
+  margin: 5px;
+}
+
+.button_flexbox {
+  display: flex;
+  justify-content: center;
+}
+.save_load_buttons {
+  padding: 10px;
+  margin: 10px;
 }

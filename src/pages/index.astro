@@ -37,8 +37,11 @@ import Dice from "../components/Dice.astro"
 			<Weapons header="Weapons" wpn1="Weapon 1:" wpn2="Weapon 2:" wpn3="Weapon 3:" wpn4="Weapon 4:"/>
 			<Armor header="Armor" head="Head:&nbsp;" torso="Torso:" legs="Legs:&nbsp;" feet="Feet:&nbsp;&nbsp;"/>
 			<Inventory header="Inventory" slot1="Slot 1:" slot2="Slot 2:" slot3="Slot 3:" slot4="Slot 4:" slot5="Slot 5:" slot6="Slot 6:"/>
-			<input type="submit" value="Submit">
-		<!-- </form> -->
+			<div class="button_flexbox">
+				<input class="save_load_buttons" type="submit" value="Save">
+				<button class="save_load_buttons">Load</button>
+			</div>
+			<!-- </form> -->
 		</main>
 		<footer>
 		</footer>
