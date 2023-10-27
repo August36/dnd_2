@@ -8,6 +8,7 @@ import Weapons from "../components/Weapons.astro";
 import Armor from "../components/Armor.astro";
 import Inventory from "../components/Inventory.astro";
 import Dice from "../components/Dice.astro"
+import "../styles/style.css"
 ---
 
 <html lang="en">
@@ -32,6 +33,9 @@ import Dice from "../components/Dice.astro"
 					<ManaBar />
 				</div>
 			</div>
+			<label for="nickname">Name:
+				<input id="nickname" type="text">
+			</label>
 			<Combatstats header="Combat Stats" combatLvl="Combat Level:&nbsp;" strLvl="Strength Level:" atkLvl="Attack Level:&nbsp;&nbsp;&nbsp;" defLvl="Defense Level&nbsp;&nbsp;" rngLvl="Ranged Level:&nbsp;&nbsp;" mgcLvl="Magic Level:&nbsp;&nbsp;&nbsp;&nbsp;"/>
 			<Spells header="Spells" spell1="Spell 1:" spell2="Spell 2:" spell3="Spell 3:" spell4="Spell 4:" spell5="Spell 5:" spell6="Spell 6:"/>
 			<Weapons header="Weapons" wpn1="Weapon 1:" wpn2="Weapon 2:" wpn3="Weapon 3:" wpn4="Weapon 4:"/>
